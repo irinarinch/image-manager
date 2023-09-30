@@ -10,8 +10,9 @@ const app = express();
 const upload = multer();
 const port = process.env.PORT || 3000;
 const host = process.env.HOST || `http://localhost:${port}`; // для деплоя бэкенда в облачный сервис необходимо изменить хост
-
+console.log(host)
 app.use("/download", express.static(path.join(path.resolve(), "uploads")));
+console.log(path.resolve())
 app.use(cors());
 app.use((req, res, next) => {
   res.setHeader('Content-Type', 'application/json');
