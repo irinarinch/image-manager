@@ -9,7 +9,7 @@ import * as crypto from "crypto";
 const app = express();
 const upload = multer();
 const port = process.env.PORT || 3000;
-const host = process.env.HOST || `http://localhost:${port}`; // для деплоя бэкенда в облачный сервис необходимо изменить хост
+const host = process.env.HOST; // для деплоя бэкенда в облачный сервис необходимо изменить хост
 
 app.use("/download", express.static(path.join(path.resolve(), "uploads")));
 app.use(cors());
