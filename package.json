@@ -1,7 +1,6 @@
 {
-  "name": "image-manager-backend",
+  "name": "image-manager",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -21,5 +20,7 @@
   },
   "devDependencies": {
     "@types/multer": "^1.4.7"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }
